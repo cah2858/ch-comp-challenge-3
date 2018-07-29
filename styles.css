@@ -1,4 +1,391 @@
 body {
   box-sizing: border-box;
+  display: grid;
+  font-family: 'Open Sans', sans-serif;
+  grid-template-columns: 200px repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "navside navtop navtop navtop"
+    "navside header header header"
+    "navside graph graph graph"
+    "navside job job links";
+  margin: auto;
 }
 
+
+/* Top Navigation Bar */
+
+.nav-top {
+  grid-area: navtop;
+  display: grid;
+  grid-template-columns: repeat(2, 80px) 2fr repeat(3, 80px);
+  border-bottom: 1px solid #93969b;
+  height: 80px;
+}
+
+.nav-icons {
+  height: 80px;
+  width: 80px;
+  background-size: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.nav-icons:hover {
+  background-color: #19a6ed;
+  cursor: pointer;
+}
+
+.search-input {
+  border: none;
+  font-size: 1.5rem;
+  height: 78px;
+}
+
+.search-input::placeholder {
+  font-size: 1.5rem;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.hamburger-icon {
+  background-image: url("images/hamburger.svg");
+  border-right: 1px solid #93969b;
+}
+
+.hamburger-icon:hover {
+  background-image: url("images/hamburger-white.svg");
+  cursor: pointer;
+
+}
+
+.search-icon {
+  background-image: url("images/search.svg");
+}
+
+.search-icon:hover {
+  background-color: #ffffff;
+  cursor: auto;
+}
+
+.search-icon-hidden {
+  display: none;
+}
+
+.profile-icon {
+  background-image: url("images/profile.svg");
+  border-left: 1px solid #93969b;
+  border-right: 1px solid #93969b;
+}
+
+.profile-icon:hover {
+  background-image: url("images/profile-white.svg");
+  cursor: pointer;
+
+}
+
+.calendar-icon {
+  background-image: url("images/calendar.svg");
+  border-right: 1px solid #93969b;
+}
+
+.calendar-icon:hover {
+  background-image: url("images/calendar-white.svg");
+  cursor: pointer;
+}
+
+.trash-icon {
+  background-image: url("images/trash.svg");
+}
+
+.trash-icon:hover {
+  background-image: url("images/trash-white.svg");
+  cursor: pointer;
+}
+
+
+/* Side Navigation Bar */
+
+.nav-side {
+  background-color: #354052;
+  grid-area: navside;
+  height: 100%;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  display: block;
+  height: 100px;
+  margin: 40px auto 0;
+}
+
+.name-arrow-container {
+  display: flex;
+  justify-content: center;
+}
+
+.name {
+  color: #99a4b6;
+  display: inline-block;
+  padding: 0 10px 15px 0;
+  margin-bottom: 0;
+}
+
+.name-arrow {
+  display: inline-block;
+  background-image: url('images/name-arrow.svg');
+  background-size: cover;
+  height: 13px;
+  width: 13px;
+  margin-top: 22px;
+}
+
+.name-arrow:hover {
+   background-image: url('images/name-arrow-white.svg');
+   cursor: pointer;
+}
+
+.nav-side-ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-side-headings {
+  padding: 30px 15px 5px;
+  color: #6a778a;
+  font-size: .75em;
+  border-top: 2px solid #2c3749;
+}
+
+.nav-side-li {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  padding: 10px 0 10px 15px;
+  border-left: 3px solid #354052;
+  color: #99a4b6;
+  font-size: .75em;
+}
+
+.nav-side-li-checkboxes {
+  display: flex;
+  align-items: center;
+  padding: 10px 0 10px 15px;
+  border-left: 3px solid #354052;
+  color: #99a4b6;
+  font-size: .75em;
+}
+
+.nav-side-li:hover {
+  background-color: #2f3849;
+  color: white;
+  border-left: 3px solid #33adf8;
+  cursor: pointer;
+}
+
+.nav-side-icon {
+  background-size: cover;
+  height: 13px;
+  width: 13px;
+  margin: 0 9px 0 0;
+}
+
+.home-icon {
+  background-image: url("images/home.svg");
+}
+
+.nav-side-li:hover .home-icon {
+  background-image: url("images/home-white.svg");
+}
+
+.jobs-icon {
+  background-image: url("images/jobs.svg");
+}
+
+.nav-side-li:hover .jobs-icon {
+  background-image: url("images/jobs-white.svg");
+}
+
+.resumes-icon {
+  background-image: url("images/resumes.svg");
+}
+
+.nav-side-li:hover .resumes-icon {
+  background-image: url("images/resumes-white.svg");
+}
+
+.tasks-icon {
+  background-image: url("images/tasks.svg");
+}
+
+.nav-side-li:hover .tasks-icon {
+  background-image: url("images/tasks-white.svg");
+}
+
+.calendar2-icon {
+  background-image: url("images/calendar2.svg");
+}
+
+.nav-side-li:hover .calendar2-icon {
+  background-image: url("images/calendar2-white.svg");
+}
+
+.users-icon {
+  background-image: url("images/users.svg");
+}
+
+.nav-side-li:hover .users-icon {
+  background-image: url("images/users-white.svg");
+}
+
+.locations-icon {
+  background-image: url("images/location.svg");
+}
+
+.nav-side-li:hover .locations-icon {
+  background-image: url("images/location-white.svg");
+}
+
+.workflows-icon {
+  background-image: url("images/workflows.svg");
+}
+
+.nav-side-li:hover .workflows-icon {
+  background-image: url("images/workflows-white.svg");
+}
+
+.jobboards-icon {
+  background-image: url("images/jobboards.svg");
+}
+
+.nav-side-li:hover .jobboards-icon {
+  background-image: url("images/jobboards-white.svg");
+}
+
+.social-icon {
+  background-image: url("images/social.svg");
+}
+
+.nav-side-li:hover .social-icon {
+  background-image: url("images/social-white.svg");
+}
+
+.administrative-icon {
+  background-image: url("images/administrative.svg");
+}
+
+.design-icon {
+  background-image: url("images/blue-square.svg");
+}
+
+.executive-icon {
+  background-image: url("images/red-square.svg");
+}
+
+.humanresources-icon {
+  background-image: url("images/green-square.svg");
+}
+
+
+
+
+
+
+
+
+/* Header Section */
+
+.header-container {
+  grid-area: header;
+  color: #7a7a7c;
+}
+
+h1 {
+  margin: 0;
+  padding-left: 50px;
+}
+
+.location-and-preview-container {
+  align-items: center;
+  display: flex;
+  padding-left: 50px;
+}
+
+.location-icon {
+  background-image: url('images/location.svg');
+  background-size: cover;
+  height: 13px;
+  width: 13px;
+}
+
+.city {
+  padding-left: 6px;
+}
+
+.dot {
+  padding: 0 13px;
+}
+
+.preview {
+  color: #19a6ed;
+}
+
+
+
+
+
+
+/*Graph Section */
+
+.graph-container {
+  background-color: ;
+  grid-area: graph;
+}
+
+
+
+
+
+/* Job Description Section */
+
+.job-description {
+  background-color: ;
+  grid-area: job;
+}
+
+
+
+
+
+
+/* Links Section */
+
+.links-container {
+  background-color: ;
+  grid-area: links;
+}
+
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1002px) {
+.nav-top {
+  grid-template-columns: repeat(2, 100px) 1fr repeat(3, 100px);
+}
+
+  .search-input {
+    display: none;  }
+
+  .search-icon-hidden {
+    display: unset;
+  }
+
+  .search-icon:hover {
+    background-image: url("images/search-white.svg");
+    background-color: #18a4fb;
+  }
+}

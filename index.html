@@ -1,10 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <link rel="stylesheet" type="text/css" href="normalize.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <title>
     Static Comp 3
   </title>
 </head>
 <body>
+  <nav class="nav-top">
+    <div class="nav-icons hamburger-icon">
+    </div>
+    <div class="nav-icons search-icon">
+    </div>
+    <div class="nav-icons search-icon-hidden">
+    </div>
+      <input class="search-input" type="text" name="search" placeholder="Search for a job, task, or resume">
+    <div class="nav-icons profile-icon">
+    </div>
+    <div class="nav-icons calendar-icon">
+    </div>
+    <div class="nav-icons trash-icon">
+    </div>
+  </nav>
+  <nav class="nav-side">
+      <img class="profile-pic" src="images/pic.jpg">
+      <div class="name-arrow-container">
+        <p class="name">Casey Hoepner<div class="name-arrow"></div></p>
+      </div>
+    <ul class=nav-side-ul>
+      <li class="nav-side-headings">Main</li>
+      <li class="nav-side-li"><div class="home-icon nav-side-icon"></div>Home</li>
+      <li class="nav-side-li"><div class="jobs-icon nav-side-icon"></div>Jobs</li>
+      <li class="nav-side-li"><div class="resumes-icon nav-side-icon"></div>Resumes</li>
+      <li class="nav-side-li"><div class="tasks-icon nav-side-icon"></div>Tasks</li>
+      <li class="nav-side-li"><div class="calendar2-icon nav-side-icon"></div>Calendar</li>
+    </ul>
+    <ul class=nav-side-ul>
+      <li class="nav-side-headings">Admin</li>
+      <li class="nav-side-li"><div class="users-icon nav-side-icon"></div>Users</li>
+      <li class="nav-side-li"><div class="locations-icon nav-side-icon"></div>Locations</li>
+      <li class="nav-side-li"><div class="workflows-icon nav-side-icon"></div>workflows</li>
+      <li class="nav-side-li"><div class="jobboards-icon nav-side-icon"></div>job boards</li>
+      <li class="nav-side-li"><div class="social-icon nav-side-icon"></div>Social</li>
+    </ul>
+    <ul class=nav-side-ul>
+      <li class="nav-side-headings">Categories</li>
+      <li class="nav-side-li-checkboxes"><div class="administrative-icon nav-side-icon"></div>Administrative</li>
+      <li class="nav-side-li-checkboxes"><div class="design-icon nav-side-icon"></div>Design</li>
+      <li class="nav-side-li-checkboxes"><div class="executive-icon nav-side-icon"></div>Executive</li>
+      <li class="nav-side-li-checkboxes"><div class="humanresources-icon nav-side-icon"></div>Human Resources</li>
+    </ul>
+  </nav>
+  <header class="header-container">
+    <h1>Customer Service Representative</h1>
+    <div class="location-and-preview-container">
+      <div class="location-icon"></div>
+      <p class="city">Denver, CO</p><p class="dot"> • </p>
+      <p class="preview">Preview this post</p>
+    </div>
+      <ul>
+        <li>Summary</li>
+        <li>Applicants</li>
+        <li>Job Boards</li>
+        <li>Interviews</li>
+        <li>Activity</li>
+        <li>Broadcast</li>
+        <li>Notifications</li>
+      </ul>
+  </header>
+  <div class="graph-container"></div>
+  <section class="job-description"></section>
+  <aside class="links-container"></aside>
 </body>
 </html>
