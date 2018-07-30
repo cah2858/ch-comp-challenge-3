@@ -4,6 +4,7 @@
   <link rel="stylesheet" type="text/css" href="normalize.css">
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>
     Static Comp 3
   </title>
@@ -54,24 +55,179 @@
     </ul>
   </nav>
   <header class="header-container">
-    <h1>Customer Service Representative</h1>
-    <div class="location-and-preview-container">
-      <div class="location-icon"></div>
-      <p class="city">Denver, CO</p><p class="dot"> • </p>
-      <p class="preview">Preview this post</p>
+    <div class="header-title-container">
+      <h1>Customer Service Representative</h1>
+        <div class="header-btns"></div>
+        <button class="open-btn">Open</button>
+        <button class="bookmark-btn"><img class="bookmark-icon" src="images/bookmark.svg"></button>
+        <button class="pencil-btn"><img class="pencil-icon" src="images/pencil.svg"></button>
+        <button class="trash-btn"><img class="trash-icon" src="images/trash.svg"></button>
+      </div>
+      <div class="location-and-preview-container">
+        <div class="location-icon"></div>
+        <p class="city">Denver, CO</p><p class="dot"> • </p>
+        <p class="preview">Preview this post</p>
     </div>
-      <ul>
-        <li>Summary</li>
-        <li>Applicants</li>
-        <li>Job Boards</li>
-        <li>Interviews</li>
-        <li>Activity</li>
-        <li>Broadcast</li>
-        <li>Notifications</li>
+      <ul class="nav-2">
+        <li class="nav-2-li">Summary</li>
+        <li class="nav-2-li">Applicants</li>
+        <li class="nav-2-li">Job Boards</li>
+        <li class="nav-2-li">Interviews</li>
+        <li class="nav-2-li">Activity</li>
+        <li class="nav-2-li">Broadcast</li>
+        <li class="nav-2-li">Notifications</li>
       </ul>
   </header>
-  <div class="graph-container"></div>
-  <section class="job-description"></section>
-  <aside class="links-container"></aside>
+
+
+
+
+
+
+  <div class="graph-container">
+    <div class="flex-wrapper">
+  <div class="single-chart">
+    <svg viewbox="0 0 36 36" class="circular-chart orange">
+      <path class="circle-bg"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"/>
+      <path class="circle"
+        stroke-dasharray="30, 100"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"/>
+      <text x="18" y="18" class="number">3,154</text>
+      <text x="18" y="24" class="words">Applicants</text>
+    </svg>
+  </div>
+  <div class="single-chart">
+    <svg viewbox="0 0 36 36" class="circular-chart green">
+      <path class="circle-bg"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"/>
+      <path class="circle"
+        stroke-dasharray="60, 100"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"/>
+      <text x="18" y="18" class="number">1,546</text>
+      <text x="18" y="24" class="words">Interviews</text>
+
+    </svg>
+  </div>
+  <div class="single-chart">
+    <svg viewbox="0 0 36 36" class="circular-chart blue">
+      <path class="circle-bg"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"/>
+      <path class="circle"
+        stroke-dasharray="90, 100"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"/>
+      <text x="18" y="18" class="number">912</text>
+      <text x="18" y="24" class="words">Forwards</text>
+    </svg>
+  </div>
+  <img class="bar-graph" src="images/graph.png">
+</div>
+        <hr class="page-break"><img class="up-arrow" src="images/up-arrow.svg">
+      <div class="page-break-container">
+      </div>
+  </div>
+
+
+
+
+  <section class="job-description">
+    <div class="job-description-heading">
+      <h3 class="job-description-title">Job Description</h3>
+      <button class="edit-btn"><img src="">Edit</button>
+    </div>
+    <table class="job-description-table">
+       <tbody>
+        <tr>
+          <td class="table-item-left">Position Title</td>
+          <td class="table-item-right">Customer Service Representative</td>
+        </tr>
+        <tr>
+          <td class="table-item-left">Location</td>
+          <td class="table-item-right">San Fransisco, CA</td>
+        </tr>
+        <tr>
+          <td class="table-item-left">Employment Type</td>
+          <td class="table-item-right">Full-Time</td>
+        </tr>
+        <tr>
+          <td class="table-item-left">Experience</td>
+          <td class="table-item-right">Mid-level</td>
+        </tr>
+        <tr>
+          <td class="table-item-left">Status</td>
+          <td class="table-item-right">Open</td>
+        </tr>
+        <tr>
+          <td class="table-item-left">Description</td>
+          <td class="table-item-right">The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsible for keeping up-to-date on the various product shizzle; helping the bidness reduce customer service wait times while doing a backhand spring and eating a ham sandwich.</td>
+        </tr>
+        <tr>
+          <td class="table-item-left">Hiring Lead</td>
+          <td class="table-item-right">Tom Tizzy</td>
+        </tr>
+        <tr>
+          <td class="table-item-left approved">Approved Salary</td>
+          <td class="table-item-right approved">$58,000</td>
+        </tr>
+    </tbody>
+  </table>
+  </section>
+  <aside class="links-container">
+    <div class="facebook-container social-btn">
+      <img src="">
+      <p class="facebook-words"> Post to Facebook</p>
+    </div>
+    <div class="twitter-container social-btn">
+      <img src="">
+      <p class="twitter-words">Tweet this Job</p> 
+    </div>
+    <div class="linkedin-container social-btn">
+      <img src="">
+    <p class='linkedin-words'>Post to LinkedIn</p>
+    </div>
+    <div class="link-section">
+      <div class="link-title-container">
+        <img class="links-icons" src="images/earth.svg">
+        <h4 class="links-title">Link to this Job</h4>
+      </div>
+      <p class="links-words">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      <div class="links-input-and-btn">
+      <input class="links-input" type="text">
+      <button class="links-btn">Copy</button>
+      </div>
+    </div>
+    <div class="link-section">
+      <div class="link-title-container">
+        <img class="links-icons" src="images/widgits.svg">
+        <h4 class="links-title">Use the Button Widget</h4>
+      </div>
+      <p class="links-words">This widget embeds the buttons for sharing the job or submitting a resume on your website.</p>
+      <div class="links-input-and-btn">
+        <input class="links-input" type="text">
+        <button class="links-btn">Copy</button>
+      </div>
+    </div>
+    <div class="link-section-last">
+      <div class="link-title-container">
+        <img class="links-icons" src="images/paper-plane.svg">
+        <h4 class="links-title">Upload Resumes by Email</h4>
+      </div>
+      <p class="links-words">You can automatically upload multiple resumes to this job by emailing the address below.</p>
+        <input class="links-input upload-resume-input" type="text">
+      </div>
+    </div>
+  </aside>
 </body>
 </html>
