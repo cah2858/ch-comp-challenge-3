@@ -15,8 +15,6 @@
     </div>
     <div class="nav-icons search-icon">
     </div>
-    <div class="nav-icons search-icon-hidden">
-    </div>
       <input class="search-input" type="text" name="search" placeholder="Search for a job, task, or resume">
     <div class="nav-icons profile-icon">
     </div>
@@ -57,91 +55,84 @@
   <header class="header-container">
     <div class="header-title-container">
       <h1>Customer Service Representative</h1>
-        <div class="header-btns"></div>
-        <button class="open-btn">Open</button>
-        <button class="bookmark-btn"><img class="bookmark-icon" src="images/bookmark.svg"></button>
-        <button class="pencil-btn"><img class="pencil-icon" src="images/pencil.svg"></button>
-        <button class="trash-btn"><img class="trash-icon" src="images/trash.svg"></button>
-      </div>
       <div class="location-and-preview-container">
         <div class="location-icon"></div>
         <p class="city">Denver, CO</p><p class="dot"> • </p>
         <p class="preview">Preview this post</p>
+      </div>
     </div>
+        <div class="header-btns">
+          <button class="open-btn"><img class="open-btn-green-dot" src="images/circular-shape-silhouette.svg">Open</button>
+          <button class="header-btn bookmark-btn"><img class="bookmark-icon" src="images/bookmark.svg"></button>
+          <button class="header-btn pencil-btn"><img class="pencil-icon" src="images/pencil.svg"></button>
+          <button class="header-btn trash-btn"><img class="trash2-icon" src="images/trash.svg"></button>
+        </div>
       <ul class="nav-2">
-        <li class="nav-2-li">Summary</li>
-        <li class="nav-2-li">Applicants</li>
-        <li class="nav-2-li">Job Boards</li>
-        <li class="nav-2-li">Interviews</li>
-        <li class="nav-2-li">Activity</li>
-        <li class="nav-2-li">Broadcast</li>
-        <li class="nav-2-li">Notifications</li>
+        <li class="nav-2-li"><button class="summary-arrow summary-arrow-left"></button>Summary<button class="summary-arrow summary-arrow-right"></button></li>
+
+        <li class="nav-2-li clear-btn">Applicants</li>
+        <li class="nav-2-li clear-btn">Job Boards</li>
+        <li class="nav-2-li clear-btn">Interviews</li>
+        <li class="nav-2-li clear-btn">Activity</li>
+        <li class="nav-2-li clear-btn">Broadcast</li>
+        <li class="nav-2-li clear-btn">Notifications</li>
       </ul>
   </header>
-
-
-
-
-
-
   <div class="graph-container">
     <div class="flex-wrapper">
-  <div class="single-chart">
-    <svg viewbox="0 0 36 36" class="circular-chart orange">
-      <path class="circle-bg"
-        d="M18 2.0845
-          a 15.9155 15.9155 0 0 1 0 31.831
-          a 15.9155 15.9155 0 0 1 0 -31.831"/>
-      <path class="circle"
-        stroke-dasharray="30, 100"
-        d="M18 2.0845
-          a 15.9155 15.9155 0 0 1 0 31.831
-          a 15.9155 15.9155 0 0 1 0 -31.831"/>
-      <text x="18" y="18" class="number">3,154</text>
-      <text x="18" y="24" class="words">Applicants</text>
-    </svg>
-  </div>
-  <div class="single-chart">
-    <svg viewbox="0 0 36 36" class="circular-chart green">
-      <path class="circle-bg"
-        d="M18 2.0845
-          a 15.9155 15.9155 0 0 1 0 31.831
-          a 15.9155 15.9155 0 0 1 0 -31.831"/>
-      <path class="circle"
-        stroke-dasharray="60, 100"
-        d="M18 2.0845
-          a 15.9155 15.9155 0 0 1 0 31.831
-          a 15.9155 15.9155 0 0 1 0 -31.831"/>
-      <text x="18" y="18" class="number">1,546</text>
-      <text x="18" y="24" class="words">Interviews</text>
-
-    </svg>
-  </div>
-  <div class="single-chart">
-    <svg viewbox="0 0 36 36" class="circular-chart blue">
-      <path class="circle-bg"
-        d="M18 2.0845
-          a 15.9155 15.9155 0 0 1 0 31.831
-          a 15.9155 15.9155 0 0 1 0 -31.831"/>
-      <path class="circle"
-        stroke-dasharray="90, 100"
-        d="M18 2.0845
-          a 15.9155 15.9155 0 0 1 0 31.831
-          a 15.9155 15.9155 0 0 1 0 -31.831"/>
-      <text x="18" y="18" class="number">912</text>
-      <text x="18" y="24" class="words">Forwards</text>
-    </svg>
-  </div>
-  <img class="bar-graph" src="images/graph.png">
-</div>
-        <hr class="page-break"><img class="up-arrow" src="images/up-arrow.svg">
-      <div class="page-break-container">
+      <div class="single-chart">
+        <svg viewbox="0 0 36 36" class="circular-chart orange">
+          <path class="circle-bg"
+            d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"/>
+          <path class="circle"
+            stroke-dasharray="30, 100"
+            d="M18 33.9155
+              a 15.9155 15.9155 0 0 1 0 -31.831
+              a 15.9155 15.9155 0 0 1 0 31.831"/>
+          <text x="18" y="18" class="number">3,154</text>
+          <text x="18" y="24" class="words">Applicants</text>
+        </svg>
       </div>
+      <div class="single-chart">
+        <svg viewbox="0 0 36 36" class="circular-chart green">
+          <path class="circle-bg"
+            d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"/>
+          <path class="circle"
+            stroke-dasharray="60, 100"
+            d="M18 33.9155
+              a 15.9155 15.9155 0 0 1 0 -31.831
+              a 15.9155 15.9155 0 0 1 0 31.831"/>
+          <text x="18" y="18" class="number">1,546</text>
+          <text x="18" y="24" class="words">Interviews</text>
+        </svg>
+      </div>
+      <div class="single-chart">
+        <svg viewbox="0 0 36 36" class="circular-chart blue">
+          <path class="circle-bg"
+            d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"/>
+          <path class="circle"
+            stroke-dasharray="90, 100"
+            d="M18 33.9155
+              a 15.9155 15.9155 0 0 1 0 -31.831
+              a 15.9155 15.9155 0 0 1 0 31.831"/>
+          <text x="18" y="18" class="number">912</text>
+          <text x="18" y="24" class="words">Forwards</text>
+        </svg>
+      </div>
+    </div>
+      <img class="bar-graph" src="images/graph.png">
   </div>
-
-
-
-
+      <div class="page-break-container">
+        <hr class="page-break">
+        <img class="up-arrow" src="images/up-arrow.svg">
+        <hr class="page-break">
+      </div>
   <section class="job-description">
     <div class="job-description-heading">
       <h3 class="job-description-title">Job Description</h3>
@@ -186,15 +177,15 @@
   </section>
   <aside class="links-container">
     <div class="facebook-container social-btn">
-      <img src="">
+      <img class="social-icon" src="images/facebook.svg">
       <p class="facebook-words"> Post to Facebook</p>
     </div>
     <div class="twitter-container social-btn">
-      <img src="">
+      <img class="social-icon" src="images/twitter.svg">
       <p class="twitter-words">Tweet this Job</p> 
     </div>
     <div class="linkedin-container social-btn">
-      <img src="">
+      <img class="social-icon" src="images/linkedin.svg">
     <p class='linkedin-words'>Post to LinkedIn</p>
     </div>
     <div class="link-section">
