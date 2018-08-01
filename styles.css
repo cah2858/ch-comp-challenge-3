@@ -601,11 +601,14 @@ h1 {
   font-size: .85rem;
 }
 
+.job-description-table {
+  color: #7a7a7c;
+}
+
 .edit-btn-container {
   display: flex;
   align-items: center;
   background-color: #7d8ba6;
-
 }
 
 .edit-btn {
@@ -615,6 +618,10 @@ h1 {
   font-size: .75rem;
   background-color: inherit;
   padding: 10px 15px 10px 4px;
+}
+
+.edit-btn:hover {
+  cursor: pointer;
 }
 
 .edit-btn-container:hover {
@@ -719,6 +726,7 @@ td {
 .link-title-container {
   display: flex;
   align-items: center;
+  color: #7a7a7c;
 }
 
 .links-icons {
@@ -734,6 +742,8 @@ td {
 .links-words {
   margin: 0;
   padding: 0;
+  color: #7a7a7c;
+
 }
 
 .links-input-and-btn {
