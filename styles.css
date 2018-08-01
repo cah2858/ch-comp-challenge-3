@@ -470,8 +470,8 @@ h1 {
 
 .flex-wrapper {
   display: flex;
-  padding: 11% 0 13% 8%;
-  width: 100%;
+  padding: 11% 20px 13% 8%;
+  width: 90%;
 }
 
 .single-chart {
@@ -755,10 +755,16 @@ td {
 }
 
 .links-input {
-  border: none;
   height: 40px;
   margin: 0;
   width: 80%;
+  background-color: #ffffff;
+  color: #7a7a7c;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 9px;
+  box-sizing: border-box;
 }
 
 .links-btn {
@@ -766,7 +772,7 @@ td {
   border: none;
   color: #ffffff;
   font-size: .75rem;
-  height: 42px;
+  height: 40px;
   margin: 0;
   width: 20%;
 }
@@ -977,5 +983,15 @@ td {
 
   .bar-graph {
     padding-top: 20px;
+  }
+
+  .table-item-left {
+    font-size: .7rem;
+    width: 36%;
+  }
+
+.table-item-right {
+    font-size: .7rem;
+    width: 95%;
   }
 }
