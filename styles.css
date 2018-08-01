@@ -471,7 +471,7 @@ h1 {
 .flex-wrapper {
   display: flex;
   padding: 11% 0 13% 8%;
-  width: 90%;
+  width: 100%;
 }
 
 .single-chart {
@@ -889,6 +889,12 @@ td {
       "job"
       "links";
     grid-template-columns: 100%;
+  }
+
+  .nav-top {
+    border-bottom: 1px solid #ffffff;
+    display: flex;
+    justify-content: space-between;
   }
 
   .job-description {
