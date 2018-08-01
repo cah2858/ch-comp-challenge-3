@@ -16,19 +16,19 @@ body {
 /* Top Navigation Bar */
 
 .nav-top {
-  grid-area: navtop;
-  display: grid;
-  grid-template-columns: repeat(2, 80px) 2fr repeat(3, 80px);
   border-bottom: 1px solid #93969b;
+  display: grid;
+  grid-area: navtop;
+  grid-template-columns: repeat(2, 80px) 2fr repeat(3, 80px);
   height: 80px;
 }
 
 .nav-icons {
+  background-position: center;
+  background-size: 20px;
+  background-repeat: no-repeat;
   height: 80px;
   width: 80px;
-  background-size: 20px;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .nav-icons:hover {
@@ -66,8 +66,8 @@ body {
 
 .search-icon:hover {
   background-color: #ffffff;
-  cursor: auto;
   border-left: 1px solid #93969b;
+  cursor: auto;
 }
 
 .search-icon-hidden {
@@ -128,17 +128,17 @@ body {
 .name {
   color: #99a4b6;
   display: inline-block;
-  padding: 0 10px 15px 0;
   margin-bottom: 0;
+  padding: 0 10px 15px 0;
 }
 
 .name-arrow {
-  display: inline-block;
   background-image: url('images/name-arrow.svg');
   background-size: cover;
+  display: inline-block;
   height: 13px;
-  width: 13px;
   margin-top: 22px;
+  width: 13px;
 }
 
 .name-arrow:hover {
@@ -152,43 +152,43 @@ body {
 }
 
 .nav-side-headings {
-  padding: 30px 15px 5px;
+  border-top: 2px solid #2c3749;
   color: #6a778a;
   font-size: .75em;
-  border-top: 2px solid #2c3749;
+  padding: 30px 15px 5px;
 }
 
 .nav-side-li {
-  text-transform: uppercase;
-  display: flex;
   align-items: center;
-  padding: 16px 0 16px 15px;
   border-left: 3px solid #354052;
   color: #99a4b6;
+  display: flex;
   font-size: .75em;
+  padding: 16px 0 16px 15px;
+  text-transform: uppercase;
 }
 
 .nav-side-li-checkboxes {
-  display: flex;
   align-items: center;
-  padding: 16px 0 16px 15px;
   border-left: 3px solid #354052;
   color: #99a4b6;
+  display: flex;
   font-size: .75em;
+  padding: 16px 0 16px 15px;
 }
 
 .nav-side-li:hover {
   background-color: #2f3849;
-  color: #ffffff;
   border-left: 3px solid #33adf8;
+  color: #ffffff;
   cursor: pointer;
 }
 
 .nav-side-icon {
   background-size: cover;
   height: 13px;
-  width: 13px;
   margin: 0 9px 0 0;
+  width: 13px;
 }
 
 .home-icon {
@@ -291,14 +291,14 @@ body {
 /* Header Section */
 
 .header-container {
-  grid-area: header;
   color: #7a7a7c;
+  grid-area: header;
   height: auto;
 }
 
 .header-title-container {
-  margin: 0;
   display: inline-block;
+  margin: 0;
   margin: 50px 0 0 5%;
 }
 
@@ -309,18 +309,18 @@ h1 {
 
 .header-btns {
   display: flex;
-  margin: 5% 4% 0 0;
   float: right;
   justify-content: flex-end;
+  margin: 5% 4% 0 0;
 }
 
 .header-btn {
-  background-size: cover;
   background-repeat: no-repeat;
-  height: 40px;
-  width: 40px;
+  background-size: cover;
   border-radius: 50%;
+  height: 40px;
   margin-left: 10px;
+  width: 40px;
 }
 
 .header-btn:hover {
@@ -331,35 +331,35 @@ h1 {
 .open-btn {
   border-radius: 20px;
   color: #7a7a7c;
-  text-transform: uppercase;
-  padding: 7px 9px;
   font-size: .75rem;
   font-weight: bold;
   height: 40px;
+  padding: 7px 9px;
+  text-transform: uppercase;
 }
 
 .open-btn-green-dot {
-  width: 10px;
   height:10px;
   padding-right: 7px;
+  width: 10px;
 }
 
 .bookmark-icon {
   height: 15px;
-  width: 15px;
   padding: 5px 0 0 2px;
+  width: 15px;
 }
 
 .pencil-icon {
   height: 15px;
-  width: 15px;
   padding: 3px 0 0 2px;
+  width: 15px;
 }
 
 .trash2-icon {
   height: 15px;
-  width: 15px;
   padding: 3px 0 0 0;
+  width: 15px;
 }
 
 .location-and-preview-container {
@@ -377,13 +377,13 @@ h1 {
 }
 
 .city {
-  padding-left: 6px;
   margin: 0;
+  padding-left: 6px;
 }
 
 .dot {
-  padding: 0 13px;
   margin: 0;
+  padding: 0 13px;
 }
 
 .preview {
@@ -398,8 +398,8 @@ h1 {
 
 .nav-2 {
   display: flex;
-  padding-left: 3.4%;
   margin: 0;
+  padding-left: 3.4%;
 }
 
 .nav-2-li-summary {
@@ -407,12 +407,12 @@ h1 {
 }
 
 .nav-2-li {
-  list-style-type: none;
-  text-transform: uppercase;
-  font-size: .75em;
   border-bottom: 3px solid #ffffff;
+  font-size: .75em;
+  list-style-type: none;
   margin-left: 20px;
   padding: 20px 0;
+  text-transform: uppercase;
 }
 
 .summary {
@@ -421,17 +421,17 @@ h1 {
 
 .nav-2-li:hover {
   border-bottom: 3px solid #33adf8;
-  font-weight: bold;
   cursor: pointer;  
+  font-weight: bold;
 }
 
 .summary-arrow {
-  display: none;
+  background-size: cover;
   border: none;
-  width: 20px;
+  display: none;
   height: 20px;
   padding: 0 10px;
-  background-size: cover;
+  width: 20px;
 }
 
 .summary-arrow-right {
@@ -461,17 +461,17 @@ h1 {
 /*Graph Section */
 
 .graph-container {
-  background-color: #edf2f6;
-  grid-area: graph;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  background-color: #edf2f6;
+  display: flex;
+  grid-area: graph;
+  justify-content: center;
 }
 
 .flex-wrapper {
-  width: 90%;
-  padding: 11% 0 13% 8%;
   display: flex;
+  padding: 11% 0 13% 8%;
+  width: 90%;
 }
 
 .single-chart {
@@ -479,9 +479,9 @@ h1 {
 }
 
 .circular-chart {
+  height: auto;
   margin: 3% auto;
   width: 100%;
-  height: auto;
 }
 
 .circle-bg {
@@ -491,10 +491,10 @@ h1 {
 }
 
 .circle {
+  animation: progress 1s ease-out forwards;
   fill: none;
   stroke-width: 2.8;
   stroke-linecap: round;
-  animation: progress 1s ease-out forwards;
 }
 
 @keyframes progress {
@@ -538,12 +538,12 @@ h1 {
 }
 
 .graph-button {
-  display: block;
-  margin: auto;
   border-radius: 20px;
-  font-size: .75rem;
-  padding: 10px 15px;
   color: #7a7a7c;
+  display: block;
+  font-size: .75rem;
+  margin: auto;
+  padding: 10px 15px;
 }
 
 .dot-graph {
@@ -552,8 +552,8 @@ h1 {
 }
 
 .bar-graph {
-  width: 90%;
   margin: 30px 6% 17px 5%;
+  width: 90%;
 }
 
 .bar-graph-and-button {
@@ -561,23 +561,23 @@ h1 {
 }
 
 .page-break-container {
-  grid-area: pagebreak;
-  display: flex;
   align-items: center;
   background-color: #edf2f6;
+  display: flex;
+  grid-area: pagebreak;
   padding: 50px;
 }
 
 .page-break {
-  width: 45%;
   color: #7a7a7c;
+  width: 45%;
 }
 
 .up-arrow {
-  width:20px;
-  height: 20px;
   background-color: #ffffff;
   border-radius: 50%;
+  height: 20px;
+  width:20px;
 }
 
 
@@ -590,17 +590,17 @@ h1 {
 }
 
 .job-description-heading {
+  align-items: center;
   background-color: #6f7e95; 
   display: flex;
-  align-items: center;
 }
 
 .job-description-title {
+  color: #ffffff;
+  font-size: .85rem;
   margin: 0;
   padding: 25px 20px 25px 25px;
-  color: #ffffff;
   text-transform: uppercase;
-  font-size: .85rem;
 }
 
 .job-description-table {
@@ -608,18 +608,18 @@ h1 {
 }
 
 .edit-btn-container {
-  display: flex;
   align-items: center;
   background-color: #7d8ba6;
+  display: flex;
 }
 
 .edit-btn {
-  color: #ffffff;
-  border: none;
-  text-transform: uppercase;
-  font-size: .75rem;
   background-color: inherit;
+  border: none;
+  color: #ffffff;
+  font-size: .75rem;
   padding: 10px 15px 10px 4px;
+  text-transform: uppercase;
 }
 
 .edit-btn:hover {
@@ -632,9 +632,9 @@ h1 {
 }
 
 .edit-btn-icon {
-  width: 15px;
   height: 15px;
   padding: 10px 4px 10px 15px;
+  width: 15px;
 }
 
 .job-description-table {
@@ -649,26 +649,25 @@ td {
 }
 
 .table-item-left {
+  font-size: 1rem;
+  padding-left: 1%;
   text-transform: uppercase;
   width: 170px;
-  padding-left: 1%;
-  font-size: 1rem;
-  width: 30%;
 }
 
 .table-item-right {
-  font-size: 1rem;
-  width: 95%;
-  padding-right: 1%;
-  display: flex;
   align-items: center;
+  display: flex;
+  font-size: 1rem;
+  padding-right: 1%;
+  width: 95%;
 }
 
 .Tammy {
-  width: 40px;
-  height: auto;
   border-radius: 50%;
+  height: auto;
   margin-right: 10px;
+  width: 40px;
 }
 
 .approved {
@@ -685,18 +684,18 @@ td {
 }
 
 .social-btn {
-  display: flex;
   align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  margin-bottom: 20px;
-  font-size: .75rem;
   border-radius: 3px;
+  color: #ffffff;
+  display: flex;
+  font-size: .75rem;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .social-icon {
-  padding: 0 10px 0 0;
   height: 10px;
+  padding: 0 10px 0 0;
   width: 10px;
 }
 
@@ -728,9 +727,9 @@ td {
 }
 
 .link-title-container {
-  display: flex;
   align-items: center;
   color: #7a7a7c;
+  display: flex;
 }
 
 .links-icons {
@@ -738,38 +737,38 @@ td {
 }
 
 .links-title {
-  padding: 30px 0 12px 8px;
-  margin: 0;
   font-size: 1.1em;
+  margin: 0;
+  padding: 30px 0 12px 8px;
 }
 
 .links-words {
-  margin: 0;
-  padding: 0;
   color: #7a7a7c;
+  padding: 0;
+  margin: 0;
 }
 
 .links-input-and-btn {
-  padding: 20px 0 30px 0;
-  display: flex;
   align-items: center;
+  display: flex;
+  padding: 20px 0 30px 0;
 }
 
 .links-input {
+  border: none;
   height: 40px;
   margin: 0;
-  border: none;
   width: 80%;
 }
 
 .links-btn {
-  height: 42px;
-  border: none;
   background-color: #4abbc3;
-  margin: 0;
-  width: 20%;
+  border: none;
   color: #ffffff;
   font-size: .75rem;
+  height: 42px;
+  margin: 0;
+  width: 20%;
 }
 
 .links-btn:hover {
@@ -782,8 +781,8 @@ td {
 }
 
 .links-icons {
-  width: 15px;
   height: 15px;
+  width: 15px;
 }
 
 .upload-resume-input {
@@ -796,13 +795,13 @@ td {
 
 @media screen and (max-width: 1020px) {
   body {
-    grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 
       "navtop navtop navtop"
       "header header header"
       "graph graph graph"
       "pagebreak pagebreak pagebreak"
       "job job links";
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .nav-side {
@@ -811,9 +810,9 @@ td {
 
   .header-btns {
     display: flex;
-    margin: 5% 4% 0 0;
     float: right;
     justify-content: flex-end;
+    margin: 5% 4% 0 0;
   }
 
   .graph-button {
@@ -823,13 +822,13 @@ td {
 
 @media screen and (max-width: 793px) {
   body {
-    grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
       "navtop navtop"
       "header header"
       "graph graph"
       "pagebreak pagebreak"
       "job links";
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .graph-container {
@@ -837,8 +836,8 @@ td {
   }
 
   .bar-graph {
-    width: 90%;
     margin: 0 4%;
+    width: 90%;
   }
 
   .flex-wrapper {
@@ -850,8 +849,8 @@ td {
   }
 
   .summary-btn {
-    display: flex;
     align-items: center;
+    display: flex;
   }
 
   .summary-arrow  {
@@ -875,14 +874,13 @@ td {
 
   .nav-2-li-summary {
     display: flex;
-    width: 80%;
     padding: 25px 4%;
+    width: 80%;
   }
 }
 
 @media screen and (max-width: 674px) {
   body {
-    grid-template-columns: 100%;
     grid-template-areas: 
       "navtop"
       "header"
@@ -890,26 +888,11 @@ td {
       "pagebreak"
       "job"
       "links";
+    grid-template-columns: 100%;
   }
 
   .job-description {
     padding: 0 5%;
-  }
-
-  .nav-top {
-    grid-area: navtop;
-    display: flex;
-    justify-content: space-between;
-    border: none;
-    height: 60px;
-  }
-
-  .nav-icons {
-    height: 60px;
-    width: 60px;
-    background-size: 20px;
-    background-position: center;
-    background-repeat: no-repeat;
   }
 
   .hamburger-icon {
@@ -961,29 +944,29 @@ td {
   }
 
   .header-btns {
-    padding-bottom: 0;
     margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   .nav-2-li {
-    padding: 0;
     margin: 0;
+    padding: 0;
   }
 
   .graph-button {
-    margin: auto;
     font-size: .5em;
+    margin: auto;
   }
 
   .graph-container {
-    padding-top: 15px;
     padding-bottom: 0px;
+    padding-top: 15px;
   }
 
   .flex-wrapper {
-    width: 100%;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    width: 100%;
   }
 
   .bar-graph {
