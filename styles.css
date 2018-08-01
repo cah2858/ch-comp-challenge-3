@@ -804,9 +804,8 @@ td {
   margin: 0 4%;
 }
 
-  .flex-wrapper {
-  width: 90%;
-  margin: 0 4%;
+.flex-wrapper {
+  padding: 3% 4% 3% 4%;
 }
 
   .clear-btn {
