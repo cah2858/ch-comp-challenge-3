@@ -402,6 +402,10 @@ h1 {
   margin: 0;
 }
 
+.nav-2-li-summary {
+    display: none;
+}
+
 .nav-2-li {
   list-style-type: none;
   text-transform: uppercase;
@@ -413,7 +417,6 @@ h1 {
 
 .summary {
   margin-left: 0px;
-
 }
 
 .nav-2-li:hover {
@@ -438,6 +441,12 @@ h1 {
 
 .summary-arrow-right:hover  {
   background-image:  url('images/arrow-right-blue.svg');
+  cursor: pointer;
+
+}
+
+.summary-arrow-right:focus {
+  outline: none;
 }
 
 .summary-arrow-left {
@@ -445,8 +454,8 @@ h1 {
   margin-right: 10px;
 }
 
-.summary-arrow-left:hover {
-  background-image: url('images/arrow-left-blue.svg');
+.summary-arrow-left:focus {
+  outline: none;
 }
 
 /*Graph Section */
@@ -466,11 +475,11 @@ h1 {
 }
 
 .single-chart {
-  padding: 15px;
+  padding: 3%;
 }
 
 .circular-chart {
-  margin: 10px auto;
+  margin: 3% auto;
   width: 100%;
   height: auto;
 }
@@ -525,7 +534,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 50%;
+  width: 90%;
 }
 
 .graph-button {
@@ -547,7 +556,7 @@ h1 {
 }
 
 .bar-graph-and-button {
-
+  width: 90%;
 }
 
 .page-break-container {
@@ -768,6 +777,10 @@ td {
     float: right;
     justify-content: flex-end;
 }
+
+.graph-button {
+  margin-bottom: 30px;
+}
 }
 
 @media screen and (max-width: 793px) {
@@ -786,12 +799,12 @@ td {
     flex-direction: column;
 }
 
-.bar-graph {
+  .bar-graph {
   width: 90%;
   margin: 0 4%;
 }
 
-.flex-wrapper {
+  .flex-wrapper {
   width: 90%;
   margin: 0 4%;
 }
@@ -811,6 +824,7 @@ td {
 
   .header-title-container {
     display: block;
+    margin-top: 40px;
   }
 
   .location-and-preview-container {
@@ -819,25 +833,14 @@ td {
 
   .header-btns {
     float: left;
-    margin: 10px 0 10px 5%;
-    display: block;
-    width:100%;
+    margin: 10px 0 0px 5%;
     padding-bottom: 30px;
   }
 
-  .nav-2 {
-    display: block;
-  }
-
-  .nav-2-li:hover {
-    border-bottom: 3px solid #ffffff;
-    font-weight: bold;
-    cursor: auto;  
-  }
-
-.summary-btn {
-  display: flex;
-  align-items: center;
+  .nav-2-li-summary {
+    display: flex;
+    width: 100%;
+    padding: 25px 4%;
   }
 }
 
@@ -902,7 +905,7 @@ td {
   }
 
   .header-title-container {
-  margin: -4% 0 0 4%;
+  margin: -10px 0 0 4%;
 }
 
   h1 {
@@ -918,8 +921,11 @@ td {
 }
 
 .nav-2 {
-  display: flex;
-  justify-content: center;
+  }
+
+  .header-btns {
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
   .nav-2-li {
@@ -927,8 +933,15 @@ td {
     margin: 0;
   }
 
+
   .graph-container {
     padding-bottom: 30px;
+  }
+
+  .flex-wrapper {
+    width: 100%;
+    padding: 0;
+    margin: 0;
   }
 }
 
