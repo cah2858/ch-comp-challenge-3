@@ -470,7 +470,7 @@ h1 {
 
 .flex-wrapper {
   width: 90%;
-  padding: 8% 4% 8% 4%;
+  padding: 11% 0 13% 8%;
   display: flex;
 }
 
@@ -552,7 +552,7 @@ h1 {
 
 .bar-graph {
   width: 90%;
-  margin: 30px 4% 17px 5%;
+  margin: 30px 6% 17px 5%;
 }
 
 .bar-graph-and-button {
@@ -644,12 +644,12 @@ td {
   width: 170px;
   padding-left: 1%;
   font-size: 1rem;
-  width: 10%;
+  width: 30%;
 }
 
 .table-item-right {
   font-size: 1rem;
-  width: 90%;
+  width: 70%;
   padding-right: 1%;
   display: flex;
   align-items: center;
