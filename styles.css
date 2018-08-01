@@ -460,8 +460,8 @@ h1 {
 }
 
 .flex-wrapper {
-  width: 50%;
-  padding-left: 4%;
+  width: 90%;
+  padding: 8% 4% 8% 4%;
   display: flex;
 }
 
@@ -521,9 +521,33 @@ h1 {
   text-transform: uppercase;
 }
 
+.circles-and-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.graph-button {
+  display: block;
+  margin: auto;
+  border-radius: 20px;
+  font-size: .75rem;
+  padding: 10px 15px;
+}
+
+.dot-graph {
+  display: inline;
+  padding: 0 5px;
+}
+
 .bar-graph {
-  width: 40%;
-  margin: 20px 4%;
+  width: 90%;
+  margin: 30px 4% 17px 5%;
+}
+
+.bar-graph-and-button {
+
 }
 
 .page-break-container {
