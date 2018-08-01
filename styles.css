@@ -12,6 +12,7 @@ body {
   height: auto;
 }
 
+
 /* Top Navigation Bar */
 
 .nav-top {
@@ -102,6 +103,7 @@ body {
   background-image: url("images/squares-white.svg");
   cursor: pointer;
 }
+
 
 /* Side Navigation Bar */
 
@@ -285,6 +287,7 @@ body {
   background-image: url("images/green-square.svg");
 }
 
+
 /* Header Section */
 
 .header-container {
@@ -302,7 +305,6 @@ body {
 h1 {
   font-size: 2rem;
   margin: 0 10px 0 0;
-
 }
 
 .header-btns {
@@ -352,14 +354,12 @@ h1 {
   height: 15px;
   width: 15px;
   padding: 3px 0 0 2px;
-
 }
 
 .trash2-icon {
   height: 15px;
   width: 15px;
   padding: 3px 0 0 0;
-
 }
 
 .location-and-preview-container {
@@ -403,7 +403,7 @@ h1 {
 }
 
 .nav-2-li-summary {
-    display: none;
+  display: none;
 }
 
 .nav-2-li {
@@ -432,7 +432,7 @@ h1 {
   height: 20px;
   padding: 0 10px;
   background-size: cover;
-  }
+}
 
 .summary-arrow-right {
   background-image:  url('images/right-arrow.svg');
@@ -442,7 +442,6 @@ h1 {
 .summary-arrow-right:hover  {
   background-image:  url('images/arrow-right-blue.svg');
   cursor: pointer;
-
 }
 
 .summary-arrow-right:focus {
@@ -457,6 +456,7 @@ h1 {
 .summary-arrow-left:focus {
   outline: none;
 }
+
 
 /*Graph Section */
 
@@ -544,7 +544,6 @@ h1 {
   font-size: .75rem;
   padding: 10px 15px;
   color: #7a7a7c;
-;
 }
 
 .dot-graph {
@@ -580,6 +579,7 @@ h1 {
   background-color: #ffffff;
   border-radius: 50%;
 }
+
 
 /* Job Description Section */
 
@@ -675,6 +675,7 @@ td {
   border-bottom: none;
 }
 
+
 /* Links Section */
 
 .links-container {
@@ -692,6 +693,7 @@ td {
   font-size: .75rem;
   border-radius: 3px;
 }
+
 .social-icon {
   padding: 0 10px 0 0;
   height: 10px;
@@ -789,17 +791,18 @@ td {
   width: 100%;
 }
 
+
 /* Media Queries */
 
 @media screen and (max-width: 1020px) {
   body {
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: 
-    "navtop navtop navtop"
-    "header header header"
-    "graph graph graph"
-    "pagebreak pagebreak pagebreak"
-    "job job links";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+      "navtop navtop navtop"
+      "header header header"
+      "graph graph graph"
+      "pagebreak pagebreak pagebreak"
+      "job job links";
   }
 
   .nav-side {
@@ -811,37 +814,36 @@ td {
     margin: 5% 4% 0 0;
     float: right;
     justify-content: flex-end;
-}
+  }
 
-.graph-button {
-  margin-bottom: 30px;
-}
+  .graph-button {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (max-width: 793px) {
   body {
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: 
-    "navtop navtop"
-    "header header"
-    "graph graph"
-    "pagebreak pagebreak"
-    "job links";
-    height: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+      "navtop navtop"
+      "header header"
+      "graph graph"
+      "pagebreak pagebreak"
+      "job links";
   }
 
   .graph-container {
     flex-direction: column;
-}
+  }
 
   .bar-graph {
-  width: 90%;
-  margin: 0 4%;
-}
+    width: 90%;
+    margin: 0 4%;
+  }
 
-.flex-wrapper {
-  padding: 3% 4% 3% 4%;
-}
+  .flex-wrapper {
+    padding: 3% 4% 3% 4%;
+  }
 
   .clear-btn {
     display: none;
@@ -879,83 +881,83 @@ td {
 }
 
 @media screen and (max-width: 674px) {
-
   body {
-  grid-template-columns: 100%;
-  grid-template-areas: 
-    "navtop"
-    "header"
-    "graph"
-    "pagebreak"
-    "job"
-    "links";
+    grid-template-columns: 100%;
+    grid-template-areas: 
+      "navtop"
+      "header"
+      "graph"
+      "pagebreak"
+      "job"
+      "links";
   }
-.job-description {
-  padding: 0 5%;
-}
 
-.nav-top {
-  grid-area: navtop;
-  display: flex;
-  justify-content: space-between;
-  border: none;
-  height: 60px;
-}
+  .job-description {
+    padding: 0 5%;
+  }
 
-.nav-icons {
-  height: 60px;
-  width: 60px;
-  background-size: 20px;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+  .nav-top {
+    grid-area: navtop;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    height: 60px;
+  }
 
-.hamburger-icon {
-  border: none;
-}
+  .nav-icons {
+    height: 60px;
+    width: 60px;
+    background-size: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
-.trash-icon {
-  border: none;
-}
+  .hamburger-icon {
+    border: none;
+  }
 
-.search-input {
-  display: none;
-}
+  .trash-icon {
+    border: none;
+  }
 
-.search-icon {
-  display: none;
-}
+  .search-input {
+    display: none;
+  }
 
-.search-icon-hidden {
-  display: none;
-}
+  .search-icon {
+    display: none;
+  }
 
-.profile-icon {
-  display: none;
-}
+  .search-icon-hidden {
+    display: none;
+  }
 
-.calendar-icon {
-  display: none;
+  .profile-icon {
+    display: none;
+  }
+
+  .calendar-icon {
+    display: none;
   }
 
   .header-title-container {
-  margin: -10px 0 0 4%;
-}
+    margin: -10px 0 0 4%;
+  }
 
   h1 {
     font-size: 1.5rem;
-}
+  }
 
   .location-and-preview-container {
     padding: 10px 0 25px 0;
   }
 
   .links-container {
-  padding: 0 4% 40px 4%;
-}
+    padding: 0 4% 40px 4%;
+  }
 
-.nav-2-li-summary {
-  padding-top: 50px;
+  .nav-2-li-summary {
+    padding-top: 50px;
   }
 
   .header-btns {
@@ -968,10 +970,10 @@ td {
     margin: 0;
   }
 
-.graph-button {
-  margin: auto;
-  font-size: .5em;
-}
+  .graph-button {
+    margin: auto;
+    font-size: .5em;
+  }
 
   .graph-container {
     padding-top: 15px;
@@ -988,4 +990,3 @@ td {
     padding-top: 20px;
   }
 }
-
