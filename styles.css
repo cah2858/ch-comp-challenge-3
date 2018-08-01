@@ -912,14 +912,15 @@ td {
 }
 
   .location-and-preview-container {
-    padding: 10px 0 10px 0;
+    padding: 10px 0 25px 0;
   }
 
   .links-container {
   padding: 0 4% 40px 4%;
 }
 
-.nav-2 {
+.nav-2-li-summary {
+  padding-top: 50px;
   }
 
   .header-btns {
@@ -932,15 +933,24 @@ td {
     margin: 0;
   }
 
+.graph-button {
+  margin: auto;
+  font-size: .5em;
+}
 
   .graph-container {
-    padding-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 0px;
   }
 
   .flex-wrapper {
     width: 100%;
     padding: 0;
     margin: 0;
+  }
+
+  .bar-graph {
+    padding-top: 20px;
   }
 }
 
