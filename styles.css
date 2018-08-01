@@ -306,11 +306,10 @@ h1 {
 }
 
 .header-btns {
-  display: inline-block;
-  align-items: center;
-  width: 400px;
-  float: right;
+  display: flex;
   margin: 5% 4% 0 0;
+  float: right;
+  justify-content: flex-end;
 }
 
 .header-btn {
@@ -323,7 +322,8 @@ h1 {
 }
 
 .header-btn:hover {
-  background-color: #16a4fa;
+  background-color: #e7e7e7;
+  cursor: pointer;
 }
 
 .open-btn {
@@ -336,18 +336,6 @@ h1 {
   height: 40px;
 }
 
-.bookmark-btn:hover {
-  background-image: url('images/bookmark-white.svg');
-}
-
-.pencil-btn:hover {
-  background-image: url('images/pencil-white.svg');
-}
-
-.trash-btn:hover {
-  background-image: url('images/trash-white.svg');
-}
-
 .open-btn-green-dot {
   width: 10px;
   height:10px;
@@ -355,7 +343,6 @@ h1 {
 }
 
 .bookmark-icon {
-  background-image: url('images/bookmark.svg')
   height: 15px;
   width: 15px;
   padding: 5px 0 0 2px;
@@ -750,6 +737,13 @@ td {
   .nav-side {
     display: none;
   }
+
+  .header-btns {
+    display: flex;
+    margin: 5% 4% 0 0;
+    float: right;
+    justify-content: flex-end;
+}
 }
 
 @media screen and (max-width: 793px) {
